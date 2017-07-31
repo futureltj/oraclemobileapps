@@ -7,39 +7,63 @@
         <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     </head>
     
-    <body>
+    <body scroll="auto">
 		<div class="page-header">
-		  <h1 align="center">AirMoni空气质量监控应用</h1>
+		  <h3 align="center">AirMoni空气质量监控应用</h3>
 		</div>
         <div class="panel panel-info">
-		  <div class="panel-heading">应用简介</div>
-		  <div class="panel-body">
-			Panel content
+		  <div class="panel-heading" style="font-size:16px">应用简介</div>
+		  <div class="panel-body" align="center">
+			<img width="200px" src="./install_files/image002.jpg">
 		  </div>
+		  <ul class="list-group">
+			<li class="list-group-item">1.树莓派连接空气质量监控仪,从空气质量监控仪读取数据。</li>
+			<li class="list-group-item">2.树莓派将读取的数据上传到IoTCS。</li>
+			<li class="list-group-item">3.IoTCS应用，创建IoT云应用、设备模型，设置事件规则以及报警目标。</li>
+			<li class="list-group-item">4.移动App显示空气质量，显示告警。</li>
+			<li class="list-group-item">5.使用语音请求IOTCS播报当前空气质量。</li>
+			<li class="list-group-item">6.通过语音请求IOTCS打开风扇/关闭风扇。</li>
+		  </ul>
+			
 		</div>
-
-		<div class="panel panel-warning">
-		  <div class="panel-heading">
-			<h3 class="panel-title">温馨提示</h3>
-		  </div>
-		  <div class="panel-body">
-			Panel content
-		  </div>
-		</div>
-		<div class="col-xs-6 col-md-3" style="border:0px">
-				<a href="#" class="thumbnail">
-				  <img src="Android.png" alt="...">
+		
+        <div class="panel panel-success">
+		  <div class="panel-heading" style="font-size:16px">应用下载</div>
+		  <div class="panel-body" align="center">
+			<div>
+				<a href="https://futureltj.github.io/oraclemobileapps/AirMoni.apk" class="thumbnail">
+				  <img src="Android.png" alt="Android">
 				</a>
-				<h3 align="center">Thumbnail label</h3>
+				<h5 align="center">Android 版本下载</h5>
 			  </div>
 			  
-			  <div class="col-xs-6 col-md-3"  style="border:0px">
-				<a href="#" class="thumbnail">
-				  <img src="iOS.png" alt="...">
+			  <div>
+				<a href="itms-services://?action=download-manifest&url=https://futureltj.github.io/oraclemobileapps/AirMoni.plist" class="thumbnail">
+				  <img src="iOS.png" alt="iOS">
 				</a>
-				<h3 align="center">Thumbnail label</h3>
+				<h5 align="center">iOS版本下载</h5>
 			  </div>
-		
+		  </div>
+			
+		</div>
+		<div class="panel panel-warning">
+		  <div class="panel-heading"  style="font-size:16px">
+			温馨提示
+		  </div>
+		  <ul class="list-group" style="color:red">
+			<li class="list-group-item">1.Android系统通过微信扫描二维码下载并安装应用时，需要通过右上角的菜单，选择“在浏览器中开”，在浏览器中进行下载并安装。</li>
+			<li class="list-group-item">2.iOS系统企业级应用未受信任的解决办法参考下图</li>
+		  </ul>
+		  <div class="panel-body" align="center">
+			<img  width="200px"  src="./install_files/image008.jpg"/>
+			<br/>
+			<img  width="200px"  src="./install_files/image010.jpg"/>
+			<br/>
+			<img  width="200px"  src="./install_files/image012.jpg"/>
+			<br/>
+			<img  width="200px"  src="./install_files/image014.jpg"/>
+		  </div>
+		</div>
     </body>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>
